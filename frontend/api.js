@@ -1,5 +1,5 @@
 export default class APIHandler {
-  constructor() {}
+  constructor() { }
 
   // TODO: 전체 카드 객체 리스트 반환. 없으면 NULL
   async getCards() {
@@ -45,7 +45,7 @@ export default class APIHandler {
 }
 
 // TODO: API 요청 컨테이너. Method, Path, Body 속성
-const HOST = "https://b8ry5owy4h.execute-api.ap-northeast-2.amazonaws.com/prod";
+const HOST = "https://1brjoz8td5.execute-api.ap-northeast-2.amazonaws.com/prod";
 
 class APIRequest {
   constructor(method, path, body = null) {
@@ -64,8 +64,8 @@ const APIProcessor = async request => {
       cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
       headers: {
         "Content-Type": "application/json",
-        Accept: "application/json",
-        "x-api-key": "XXNmmXO9be1rPTLAeLrXW5FqNvhlxLvv5RZ6fLBy"
+        "Accept": "application/json",
+        "x-api-key": "xJ62YtAuKi6XhVpuE7bGjaU6FA0ZuNnx21EHyEe8"
       },
       body: request.body ? JSON.stringify(request.body) : null // body data type must match "Content-Type" header
     });
